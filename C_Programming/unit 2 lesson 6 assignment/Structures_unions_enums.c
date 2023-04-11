@@ -83,13 +83,13 @@ int main()
 	SInfoArrayFiller();
 	SInfoArrayDisplay();
 #endif
-#define EX5
+#if EX5
 	printf("Enter radius: ");
 	float r;
 	scanf("%f",&r);
 	printf("Area: %.2f",area(r));
 	return 0;
-
+#endif
 	/********EX6 Answer*******************
 	 * size of union= 32
 	 * size of structure = 40
