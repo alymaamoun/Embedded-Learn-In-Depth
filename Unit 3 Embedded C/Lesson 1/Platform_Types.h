@@ -13,7 +13,7 @@
 
 #include <stdint.h>
 
-#define CPU_TYPE 		CPU_TYPE_16
+#define CPU_TYPE 		    CPU_TYPE_16
 #define CPU_BIT_ORDER 	LSB_FIRST
 #define CPU_BYTE_ORDER  HIGH_BYTE_FIRST
 
