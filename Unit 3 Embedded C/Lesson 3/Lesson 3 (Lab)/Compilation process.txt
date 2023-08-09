@@ -1,0 +1,47 @@
+$ export PATH="C:\Program Files (x86)\GNU Tools ARM Embedded\7 2017-q4-major\bin":$PATH	##PATH OF COMPILER IS ADDED
+##############################################################################################################################################################################
+
+
+/******************START*************************
+*********do it for all soucre files*************/
+
+$ arm-none-eabi-gcc.exe -g  -c -mcpu=arm926ej-s -I . file.c -o file.o				## the file is entered to the compiler and assembler to generate the object file 
+
+/*******************END*************************/
+
+
+#############################################################################################################################################################################
+
+
+
+/******************START*************************
+**********GENERRATING THE STARTUP FILE***********/
+
+$ arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o					## The startup file is passed to the assembler to generate the object file
+
+/*******************END*************************/
+
+
+
+##############################################################################################################################################################################
+
+
+
+/******************START*************************
+***********LINKING USING LINKER SCRIPT***********/
+
+
+$arm-none-eabi-ld -T test.ld -Map=output.map app.o uart.o startup.o -o learn-in-depth.elf		##The linker script is passed to the linker with all the object files
+
+
+/*******************END*************************/
+
+
+
+##############################################################################################################################################################################
+
+
+$ arm-none-eabi-objcopy.exe -O binary learn-in-depth.elf learn-in-depth.bin
+
+used to generate the binary
+

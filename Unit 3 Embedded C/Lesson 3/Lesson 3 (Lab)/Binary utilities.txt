@@ -1,0 +1,40 @@
+#########################################################################################################
+
+
+$ arm-none-eabi-objdump.exe -h app.o
+
+
+This command is used to see the sections inside the object file, the size and VMA and LMA and allign of the
+.bss , .data,.text ,etc
+
+#########################################################################################################
+
+
+
+$ arm-none-eabi-objdump.exe -D app.o > app.s
+
+this command is used to print the sections into file
+
+
+
+###########################################################################################################
+
+
+$ arm-none-eabi-objdump.exe -h app.o
+
+like first one but display full content
+
+
+##############################################################################################################
+
+
+ $ arm-none-eabi-nm.exe app.o
+
+reading the symbols
+
+
+
+##############################################################################################################
+
+$arm-none-eabi-readelf.exe -a file.elf
+-a:read all
