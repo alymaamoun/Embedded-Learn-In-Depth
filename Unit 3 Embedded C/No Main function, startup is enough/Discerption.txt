@@ -1,0 +1,17 @@
+Main function is just convential name for the first function called after startup code
+startup code after initializing the enviroment for the program it will call the main function
+startup main tasks:
+                    1) Initialize the stack pointer
+                    2) Copy the .Data section from ROM to RAM
+                    3) Reservce space in RAM for the .bss and initialize this area with zeros
+                    4) Call the main function 
+
+
+but in the fourth point, is that necessary to call the main function , or it's necessary to be called or named main function?
+the answer is no , main function can be renamed with anything
+but the name "main" is the convential name
+
+
+is that necessary to call main function?
+the answer is no you can write your application in the reset handler
+just use the make command to create the elf and axf image and burn it to test ;)
