@@ -16,8 +16,7 @@
  
  ![Handler,privildged,ISR captured using inline assembly retreving CONTROL reg](https://github.com/alymaamoun/Embedded-Learn-In-Depth/assets/53837104/7562dac6-a3dc-4676-8f95-78ac335d292b)
 
-## we are in handler mode, so privilege mode, additionally, we captured the ISR number in VAL11 using inline assembly by MRS reading from xPSR register and at the call back we set the next thread mode to be in
- privilege mode
+## we are in handler mode, so privilege mode, additionally, we captured the ISR number in VAL11 using inline assembly by MRS reading from xPSR register and at the call back we set the next thread mode to be in privilege mode
 
 # FOURTH
 
